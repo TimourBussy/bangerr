@@ -1,1 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Medula+One&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --font-medula: "Medula One", sans-serif;
+  --font-glacial-indifference: 'Glacial Indifference', sans-serif;
+}
