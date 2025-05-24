@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html>
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="/src/main.css">
@@ -8,17 +8,27 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Timour JBANOV--EMORINE</title>
-    <meta name="description" content="Bonjour, je m'appelle Timour Jbanov--Emorine et je suis un développeur full stack, actuellement en formation.">
+    <title></title>
+    <meta name="description" content="">
   </head>
   <body>
     <div id="app">
-      <header class="bg-rose-200 p-4 ">
-        <div class="w-fit mx-auto text-left">
-          <h1 class="font-medula font-bold tracking-wider text-6xl">Timour JBANOV--EMORINE</h1>
-          <h2 class="font-glacial-indifference font-bold text-4xl">Développeur Full Stack</h2>
+      <header class="sticky bg-light-pink p-4 before:absolute before:bottom-0 before:left-0 before:w-full before:h-[4px] before:bg-gradient-to-r before:from-gradient-pink before:to-gradient-yellow">
+        <div class="w-fit mx-auto text-left pointer-events-none">
+          <h1 class="font-medula font-bold tracking-wider text-6xl">TIMOUR JBANOV--EMORINE</h1>
+          <h2 class="text-center font-glacial-indifference font-bold text-4xl"></h2>
+        </div>
+        <div class="flex gap-2.75 absolute top-1/3 right-8">
+          <img src="/images/fr.webp" id="lang-fr" class="h-8 w-12 cursor-pointer grayscale" alt="Français" />
+          <img src="/images/en.webp" id="lang-en" class="h-8 w-12 cursor-pointer grayscale" alt="English" />
         </div>
       </header>
+
+      <main>
+        <div>
+          <h3 id="profile"></h3>
+        </div>
+      </main>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>

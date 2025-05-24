@@ -1,1 +1,1 @@
-import './main.css';
+import "./scripts/i18n.js"

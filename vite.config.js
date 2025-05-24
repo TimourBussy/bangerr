@@ -19,4 +19,7 @@ export default defineConfig({
   css: {
     postcss: './postcss.config.cjs',
   },
+  server: {
+    hmr: {overlay: false}
+  }
 })

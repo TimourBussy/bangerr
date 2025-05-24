@@ -4,4 +4,9 @@
 @theme {
   --font-medula: "Medula One", sans-serif;
   --font-glacial-indifference: 'Glacial Indifference', sans-serif;
+
+  --color-light-pink: #fddeda;
+  --color-gradient-pink: #ff66c4;
+  --color-gradient-yellow: #ffde59;
+
 }
