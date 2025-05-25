@@ -26,13 +26,24 @@ function updateLangVisual(currentLang) {
 }
 
 function updateText() {
-  const desc = document.querySelector("meta[name='description']");
+  const metaDesc = document.querySelector("meta[name='description']");
   const h2 = document.querySelector("h2");
   const profile = document.getElementById("profile");
+  const profileDesc = document.getElementById("description");
+  const skills = document.getElementById("skills");
+  const hobbies = document.getElementById("hobbies");
+  const japan = document.getElementById("japan");
 
-  if (desc) desc.setAttribute("content", i18next.t("description"));
+  if (metaDesc) metaDesc.setAttribute("content", i18next.t("description"));
   if (h2) h2.textContent = i18next.t("h2");
   if (profile) profile.textContent = i18next.t("profile");
+  if (profileDesc) profileDesc.textContent = i18next.t("description");
+  if (skills) skills.textContent = i18next.t("skills");
+  if (hobbies) hobbies.textContent = i18next.t("hobbies");
+  if (japan) {
+    japan.setAttribute("alt", i18next.t("japan"));
+    japan.setAttribute("title", i18next.t("japan"));
+  } 
 
   updateLangVisual(i18next.language);
 }

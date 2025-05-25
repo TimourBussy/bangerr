@@ -1,5 +1,8 @@
 {
-    "description": "Bonjour, je m'appelle Timour Jbanov--Emorine et je suis un développeur full stack, actuellement en formation.",
+    "description": "Bonjour, je m'appelle Timour et je suis un développeur full stack, actuellement en formation.",
     "h2": "Développeur Full Stack",
-    "profile": "Profil"
+    "profile": "Profil",
+    "skills": "Compétences",
+    "hobbies": "Passions",
+    "japan": "Japon"
 }

@@ -1,33 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/src/main.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/src/main.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
-    <meta name="description" content="">
+    <meta name="description">
   </head>
   <body>
     <div id="app">
-      <header class="sticky bg-light-pink p-4 before:absolute before:bottom-0 before:left-0 before:w-full before:h-[4px] before:bg-gradient-to-r before:from-gradient-pink before:to-gradient-yellow">
-        <div class="w-fit mx-auto text-left pointer-events-none">
-          <h1 class="font-medula font-bold tracking-wider text-6xl">TIMOUR JBANOV--EMORINE</h1>
-          <h2 class="text-center font-glacial-indifference font-bold text-4xl"></h2>
+      <header class="sticky top-0 z-100 bg-lighter-pink p-4 before:absolute before:bottom-0 before:left-0 before:w-full before:h-[4px] before:bg-gradient-to-r before:from-gradient-pink before:to-gradient-yellow">
+        <div class="w-fit mx-auto text-center pointer-events-none">
+          <h1 class="font-medula font-bold tracking-widest text-6xl">TIMOUR JBANOV--EMORINE</h1>
+          <h2 class="font-glacial font-bold text-4xl"></h2>
         </div>
         <div class="flex gap-2.75 absolute top-1/3 right-8">
-          <img src="/images/fr.webp" id="lang-fr" class="h-8 w-12 cursor-pointer grayscale" alt="Français" />
-          <img src="/images/en.webp" id="lang-en" class="h-8 w-12 cursor-pointer grayscale" alt="English" />
+          <img src="/images/fr.webp" id="lang-fr" class="h-8 w-12 cursor-pointer grayscale" alt="Français" title="Français" />
+          <img src="/images/en.webp" id="lang-en" class="h-8 w-12 cursor-pointer grayscale" alt="English" title="English" />
         </div>
       </header>
 
       <main>
-        <div>
-          <h3 id="profile"></h3>
-        </div>
+        <section class="mt-12">
+          <div class="mx-175 text-center text-5xl font-medula tracking-widest px-10 py-2 bg-gradient-to-r from-gradient-pink/58 to-gradient-yellow/58 rounded-full">
+            <h3 id="profile"></h3>
+          </div>
+          <div class="mt-8 flex justify-center">
+            <div class="p-[6px] rounded-xl bg-gradient-to-r from-gradient-pink to-gradient-yellow inline-block">
+              <div class="w-65 h-75 rounded-xl overflow-hidden">
+                <img src="/images/timour.jpg" alt="Timour" class="w-full h-full object-cover scale-112" />
+              </div>
+            </div>
+            <div class="w-60 ml-10 flex items-center">
+              <p id="description" class="font-glacial text-xl/8.5"></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="mt-12">
+          <div class="mx-175 text-center text-5xl font-medula tracking-widest px-10 py-2 bg-gradient-to-r from-gradient-pink/58 to-gradient-yellow/58 rounded-full">
+            <h3 id="skills"></h3>
+          </div>
+          <article class="mt-8 font-glacial font-extrabold text-center text-3xl max-w-[460px] mx-auto tracking-tight">
+            <h4>HTML/CSS (+Tailwind)</h4>
+            <div class="relative mt-4 py-3.5 bg-zinc-300 box-content border-3 border-stone-600 rounded-full">
+              <div class="w-8/10 absolute top-0 left-0 h-full rounded-full bg-gradient-to-r from-gradient-pink/58 to-gradient-yellow/58"></div>
+            </div>
+          </article>
+          <article class="mt-8 font-glacial font-extrabold text-center text-3xl max-w-[460px] mx-auto tracking-tight">
+            <h4>Javascript</h4>
+            <div class="relative mt-4 py-3.5 bg-zinc-300 box-content border-3 border-stone-600 rounded-full">
+              <div class="w-3/10 absolute top-0 left-0 h-full rounded-full bg-gradient-to-r from-gradient-pink/58 to-gradient-yellow/58"></div>
+            </div>
+          </article>
+          <article class="mt-8 font-glacial font-extrabold text-center text-3xl max-w-[460px] mx-auto tracking-tight">
+            <h4>PHP</h4>
+            <div class="relative mt-4 py-3.5 bg-zinc-300 box-content border-3 border-stone-600 rounded-full">
+              <div class="w-5/10 absolute top-0 left-0 h-full rounded-full bg-gradient-to-r from-gradient-pink/58 to-gradient-yellow/58"></div>
+            </div>
+          </article>
+        </section>
+
+        <section class="mt-12">
+          <div class="mx-175 text-center text-5xl font-medula tracking-widest px-10 py-2 bg-gradient-to-r from-gradient-pink/58 to-gradient-yellow/58 rounded-full">
+            <h3 id="hobbies"></h3>
+          </div>
+          <div class="mt-8 flex flex-wrap justify-center mx-auto max-w-5xl gap-x-8">
+            <article class="flex items-center justify-center w-28 h-28 bg-light-pink rounded-full">
+              <img class="w-4/6 h-4/6" src="/images/japan.png" alt="Japan" />
+            </article>
+            <article class="flex items-center justify-center w-28 h-28 bg-light-pink rounded-full">
+              <img class="w-4/6 h-4/6" src="/images/japan.png" alt="Japan" />
+            </article>
+            <article class="flex items-center justify-center w-28 h-28 bg-light-pink rounded-full">
+              <img class="w-4/6 h-4/6" src="/images/japan.png" alt="Japan" />
+            </article>
+            <article class="flex items-center justify-center w-28 h-28 bg-light-pink rounded-full">
+              <img class="w-4/6 h-4/6" src="/images/japan.png" alt="Japan" />
+            </article>
+            <article class="flex items-center justify-center w-28 h-28 bg-light-pink rounded-full">
+              <img class="w-4/6 h-4/6" src="/images/japan.png" alt="Japan" />
+            </article>
+          </div>
+        </section>
       </main>
     </div>
     <script type="module" src="/src/main.js"></script>
