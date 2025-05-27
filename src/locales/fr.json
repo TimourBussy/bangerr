@@ -1,4 +1,5 @@
 {
+    "lang": "fr",
     "description": "Bonjour, je m'appelle Timour et je suis un développeur full stack, actuellement en formation.",
     "h2": "Développeur Full Stack",
     "profile": "Profil",
@@ -10,5 +11,14 @@
     "drawing": "Dessin",
     "singing": "Chant",
     "experience": "Expérience Professionnelle",
-    "nothing": "Aucune pour le moment, mais je suis ouvert aux offres d'emploi !"
+    "nothing": "Aucune pour le moment, mais je suis ouvert aux offres d'emploi !",
+    "bac": "Baccalauréat Général",
+    "but": "BUT Métiers du Multimédia et de l'Internet",
+    "nameLabel": "Nom",
+    "name": "Ex: Jean-Eudes",
+    "email": "Ex: jeaneudeslebg@sfr.fr",
+    "message": "Votre message...",
+    "send": "Envoyer",
+    "contact.success": "Message envoyé avec succès !",
+    "contact.error": "Erreur lors de l’envoi "
 }

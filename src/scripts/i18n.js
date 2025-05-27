@@ -26,6 +26,7 @@ function updateLangVisual(currentLang) {
 }
 
 function updateText() {
+  const html = document.querySelector("html")
   const metaDesc = document.querySelector("meta[name='description']");
   const h2 = document.querySelector("h2");
   const profile = document.getElementById("profile");
@@ -39,7 +40,17 @@ function updateText() {
   const singing = document.getElementById("singing");
   const experience = document.getElementById("experience");
   const nothing = document.getElementById("nothing");
+  const bac = document.getElementById("bac");
+  const lycee = document.getElementById("lycee");
+  const but = document.getElementById("but");
+  const uca = document.getElementById("uca");
+  const nameLabel = document.querySelector("label[for='name']");
+  const name = document.getElementById("name");
+  const email = document.getElementById("email");
+  const message = document.getElementById("message");
+  const send = document.getElementById("send");
 
+  if (html) metaDesc.setAttribute("lang", i18next.t("lang"));
   if (metaDesc) metaDesc.setAttribute("content", i18next.t("description"));
   if (h2) h2.textContent = i18next.t("h2");
   if (profile) profile.textContent = i18next.t("profile");
@@ -68,6 +79,25 @@ function updateText() {
   }
   if (experience) experience.textContent = i18next.t("experience");
   if (nothing) nothing.textContent = i18next.t("nothing");
+  if (bac) bac.textContent = i18next.t("bac");
+  if (lycee) {
+    lycee.textContent = "Lycée Théodore de Banville";
+    if (i18next.language === "en") {
+      lycee.textContent += " (High School)";
+    }
+  }
+  if (but) but.textContent = i18next.t("but");
+  if (uca) {
+    uca.textContent = "Université Clermont Auvergne";
+    if (i18next.language === "en") {
+      uca.textContent += " (University)";
+    }
+  }
+  if (nameLabel) nameLabel.textContent = i18next.t("nameLabel");
+  if (name) name.setAttribute("placeholder", i18next.t("name"));
+  if (email) email.setAttribute("placeholder", i18next.t("email"));
+  if (message) message.setAttribute("placeholder", i18next.t("message"));
+  if (send) send.textContent = i18next.t("send");
 
   updateLangVisual(i18next.language);
 }

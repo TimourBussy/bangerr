@@ -1,4 +1,5 @@
 {
+    "lang": "en",
     "description": "Hello, my name is Timour and I am a full stack developer, currently in training.",
     "h2": "Full Stack Developer",
     "profile": "Profile",
@@ -10,5 +11,16 @@
     "drawing": "Drawing",
     "singing": "Singing",
     "experience": "Work Experience",
-    "nothing": "None at the moment, but I’m open to job offers!"
+    "nothing": "None at the moment, but I’m open to job offers!",
+    "bac": "General Baccalaureate",
+    "but": "BUT MMI (Bachelor in Multimedia and Internet Professions)",
+    "nameLabel": "Name",
+    "name": "Ex: John Doe",
+    "email": "Ex: johndoethegoat@gmail.com",
+    "message": "Your message...",
+    "send": "Send",
+    "contact": {
+        "success": "Message sent successfully!",
+        "error": "Error while sending"
+    }
 }
