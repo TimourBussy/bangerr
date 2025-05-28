@@ -49,6 +49,8 @@ function updateText() {
   const email = document.getElementById("email");
   const message = document.getElementById("message");
   const send = document.getElementById("send");
+  const beforeWP = document.getElementById("beforeWP");
+  const afterWP = document.getElementById("afterWP");
 
   if (html) metaDesc.setAttribute("lang", i18next.t("lang"));
   if (metaDesc) metaDesc.setAttribute("content", i18next.t("description"));
@@ -98,6 +100,8 @@ function updateText() {
   if (email) email.setAttribute("placeholder", i18next.t("email"));
   if (message) message.setAttribute("placeholder", i18next.t("message"));
   if (send) send.textContent = i18next.t("send");
+  if (beforeWP) beforeWP.textContent = i18next.t("footer.before");
+  if (afterWP) afterWP.textContent = i18next.t("footer.after");
 
   updateLangVisual(i18next.language);
 }

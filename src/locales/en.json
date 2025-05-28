@@ -21,6 +21,10 @@
     "send": "Send",
     "contact": {
         "success": "Message sent successfully!",
-        "error": "Error while sending"
+        "error": "Error while sending!"
+    },
+    "footer": {
+        "before": "Site created using ",
+        "after": ", theme created from A to Z by me."
     }
 }

@@ -19,6 +19,12 @@
     "email": "Ex: jeaneudeslebg@sfr.fr",
     "message": "Votre message...",
     "send": "Envoyer",
-    "contact.success": "Message envoyé avec succès !",
-    "contact.error": "Erreur lors de l’envoi "
+    "contact": {
+        "success": "Message envoyé avec succès !",
+        "error": "Erreur lors de l'envoi!"
+    },
+    "footer": {
+        "before": "Site réalisé sous ",
+        "after": ", thème créé de A à Z par mes soins."
+    }
 }
