@@ -26,5 +26,6 @@
     "footer": {
         "before": "Site réalisé sous ",
         "after": ", thème créé de A à Z par mes soins."
-    }
+    },
+    "copyright": "Tous droits réservés"
 }

@@ -26,5 +26,6 @@
     "footer": {
         "before": "Site created using ",
         "after": ", theme created from A to Z by me."
-    }
+    },
+    "copyright": "All rights reserved"
 }

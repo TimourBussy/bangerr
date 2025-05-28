@@ -51,6 +51,7 @@ function updateText() {
   const send = document.getElementById("send");
   const beforeWP = document.getElementById("beforeWP");
   const afterWP = document.getElementById("afterWP");
+  const copyright = document.getElementById("copyright");
 
   if (html) metaDesc.setAttribute("lang", i18next.t("lang"));
   if (metaDesc) metaDesc.setAttribute("content", i18next.t("description"));
@@ -102,6 +103,7 @@ function updateText() {
   if (send) send.textContent = i18next.t("send");
   if (beforeWP) beforeWP.textContent = i18next.t("footer.before");
   if (afterWP) afterWP.textContent = i18next.t("footer.after");
+  if (copyright) copyright.textContent = i18next.t("copyright");
 
   updateLangVisual(i18next.language);
 }
